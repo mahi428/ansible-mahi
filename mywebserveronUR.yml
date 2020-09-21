@@ -4,12 +4,12 @@
     tasks:
     - name: i want install apache2 webserver on ubuntu
       apt:
-        name: apache2
+        name: "{{mywebonubuntu}}"
         state: present
       when: ansible_os_family == "Debian" 
         
     - name: i want install  webserver on redhat
       yum:
-        name: httpd
+        name: "{{mywebonredhat}}"
         state: present
       when: ansible_os_family == "RedHat" 
