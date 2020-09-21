@@ -5,13 +5,13 @@
 [appserver]
 172.41.41.36
 172.31.42.176
-   
- [dbserver]
- 172.45.32.96
- 171.25.36.98
 
-  [ubuntuserver]
-  172.31.32.172
+[dbserver]
+172.45.32.96
+171.25.36.98
+
+[ubuntuserver]
+172.31.32.172
    
-   [redhatserver] 
-   172.31.41.38 
+[redhatserver] 
+172.31.41.38 
