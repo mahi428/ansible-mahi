@@ -1,4 +1,4 @@
 ---
 key=value
-mywebonubuntu=apache2
-mywebonredhat=httpd
+mywebonubuntu:apache2
+mywebonredhat:httpd
