@@ -1,8 +1,5 @@
 ---
-- hosts: 172.31.32.172
-  become: yes
-  tasks:
-   - name: i want to create a file 
-     file:
-       path: /home/ubuntu/mahitextfile.txt
-       state: touch   
+- name: i want to create a file 
+  file:
+    path: /home/ubuntu/mahitextfile.txt
+    state: touch   
