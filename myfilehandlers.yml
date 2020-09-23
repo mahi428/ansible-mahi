@@ -8,19 +8,17 @@
     apt:
       name: apache2
       state: present
-
-  - name: i want to restart apache2 webserver
-    service:
-      name: apache2
-      state: restarted  
+    notify: restartwebserver
 
   - name: copy index.j2 into ansible node side
     template:
       src: index.j2
       dest: /var/www/html/index.html    
-      
-  - name: i want to restart apache2 webserver
-    service:
-      name: apache2
-      state: restarted 
+    notify:  restartwebserver
 
+
+  handlers:
+   - name: restartwebserver
+     service:
+       name: apache2
+       state: restarted     
